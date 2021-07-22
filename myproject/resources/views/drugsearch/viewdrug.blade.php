@@ -143,9 +143,8 @@
                 </tr>
                 <tr align="center"><td colspan="2"></br><b>Indication:</b></br>{!! $first->indication !!}</td></tr>
                 </table>
-                </br></br><h4><b>Protein targets for {{$first->drugname}}</h4></b></br>
-                
-                
+                </br><h4><b>Protein targets for {{$first->drugname}}</h4></b>
+            
                 <table id="mytable" class="display compact" style="width:100%"><thead><tr>
                     <th class="text-center">Pharmaco-</br>logical action</th>
                     <th class="text-center">Protein name</th>

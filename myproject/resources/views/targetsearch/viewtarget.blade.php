@@ -116,9 +116,9 @@
                 if (strlen(trim($reppdb)) != 0){
                     $reptwo = strtolower(substr($reppdb,1,-1));
                     $linkimg = 'https://cdn.rcsb.org/images/structures/'.$reptwo.'/'.strtolower($reppdb).'/'.strtolower($reppdb).'_assembly-1.jpeg';
-                    echo '<table align="center" width="90%"><tr align="center">';
-                    echo '<td align="center" width="50%"><img src="'.$linkimg.'" alt="ligand" width="400px" height="400px"></td>';
-                    echo '<td align="center" width="50%">';
+                    echo '<table align="center" width="60%"><tr align="center">';
+                    echo '<td align="center" width="30%"><img src="'.$linkimg.'" alt="ligand" width="400px" height="400px"></td>';
+                    echo '<td align="center" width="30%">';
                     echo '<b>'.$first->proteinname.'</b></br>';
                     echo '<i>'.$first->genename.'</i> | '.$first->uniprottitle.'</br>';
                     if ($first->pharmaactive == 'P'){echo '<i>Pharmacologically active</i></br>';}
@@ -141,7 +141,7 @@
                     if (strlen(trim($first->gbgeneid)) != 0){echo '</br><a class="button button4" href="https://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val='.$first->gbgeneid.'">GeneBank (gene): '.$first->gbgeneid.'</a>';}
                 }
                 @endphp
-                </br></br><h4><b>Drug molecules for {{$first->proteinname}} ({{$uniprotid}}})</h4></b></br>
+                </br><h4><b>Drug molecules bound to {{$first->proteinname}} ({{$uniprotid}}})</h4></b>
                 <table id="mytable" class="display compact" style="width:100%"><thead><tr>
                     <th class="text-center">DrugBank ID</th>
                     <th class="text-center">Drug name</th>
